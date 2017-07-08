@@ -1,0 +1,46 @@
+{
+    "name": "awesometypescriptproblemmatcher",
+    "displayName": "AwesomeTypescriptProblemMatcher",
+    "description": "Problem Matcher for Webpack's Awesome Typescript Loader",
+    "version": "0.2.0",
+    "publisher": "JuanCasanova",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "problemMatchers": [
+            {
+                "name": "awesometsc",
+                "severity": "error",
+                "fileLocation": "relative",
+                "pattern": [
+                    {
+                        "regexp": "ERROR in \\[at-loader\\] ([^:]*):(\\d+):(\\d+)",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3
+                    },
+                    {
+                        "regexp": "TS(.*)",
+                        "message": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "",
+        "compile": "",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
