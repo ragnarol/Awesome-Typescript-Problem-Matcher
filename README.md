@@ -1,4 +1,4 @@
-# awesometypescriptproblemmatcher README
+# Awesome Typescript Problem Matcher
 
 A problem matcher to show TSC compilation errors when building typescript from Webpack using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader)
 
