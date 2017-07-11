@@ -2,7 +2,7 @@
     "name": "awesometypescriptproblemmatcher",
     "displayName": "Awesome Typescript Problem Matcher",
     "description": "Problem Matcher for Webpack's Awesome Typescript Loader",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "publisher": "JuanCasanova",
     "repository": {
         "type": "git",
@@ -37,16 +37,16 @@
             {
                 "name": "awesomets-lint",
                 "owner": "tslint",
-                "severity": "error", 
-                "fileLocation": "relative", 
+                "severity": "error",
+                "fileLocation": "relative",
                 "pattern": [
                     {
-                        "regexp": "(ERROR|WARNING) in ([^:]*)",	
-                        "file" : 2,	
+                        "regexp": "(ERROR|WARNING) in ([^:]*)",
+                        "file": 2,
                         "severity": 1
                     },
                     {
-                        "regexp": "\\[(\\d+), (\\d+)\\]: (.*)",	
+                        "regexp": "\\[(\\d+), (\\d+)\\]: (.*)",
                         "line": 1,
                         "column": 2,
                         "message": 3,
