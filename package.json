@@ -18,6 +18,7 @@
         "problemMatchers": [
             {
                 "name": "awesometsc",
+                "owner": "typescript",
                 "severity": "error",
                 "fileLocation": "relative",
                 "pattern": [
@@ -30,6 +31,26 @@
                     {
                         "regexp": "TS(.*)",
                         "message": 1
+                    }
+                ]
+            },
+            {
+                "name": "awesomets-lint",
+                "owner": "tslint",
+                "severity": "error", 
+                "fileLocation": "relative", 
+                "pattern": [
+                    {
+                        "regexp": "(ERROR|WARNING) in ([^:]*)",	
+                        "file" : 2,	
+                        "severity": 1
+                    },
+                    {
+                        "regexp": "\\[(\\d+), (\\d+)\\]: (.*)",	
+                        "line": 1,
+                        "column": 2,
+                        "message": 3,
+                        "loop": true
                     }
                 ]
             }
