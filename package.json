@@ -32,7 +32,15 @@
                         "regexp": "TS(.*)",
                         "message": 1
                     }
-                ]
+                ],
+                "applyTo": "allDocuments",
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "webpack: Compiling...",
+                    "endsPattern": {
+                        "regexp": "webpack: Failed to compile.|webpack: Compiled successfully."
+                    }
+                }
             },
             {
                 "name": "awesomets-lint",
@@ -52,7 +60,15 @@
                         "message": 3,
                         "loop": true
                     }
-                ]
+                ],
+                "applyTo": "allDocuments",
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "webpack: Compiling...",
+                    "endsPattern": {
+                        "regexp": "webpack: Failed to compile.|webpack: Compiled successfully."
+                    }
+                }
             }
         ]
     },
